@@ -43,6 +43,18 @@ class TestCases(unittest.TestCase):
 
 
     # Part 3
+    def test_are_in_positive_quadrant_1(self):
+        input = [data.Point(1, 1), data.Point(7, -3), data.Point(-100, 100), data.Point(-13, -85)]
+        result = lab4.are_in_positive_quadrant(input)
+        expected = [data.Point(1,1)]
+        self.assertEqual(expected, result)
+
+    def test_are_in_positive_quadrant_2(self):
+        input = [data.Point(0, 0), data.Point(-1, -1), data.Point(-10, 20), data.Point(-1, 1000)]
+        result = lab4.are_in_positive_quadrant(input)
+        expected = []
+        self.assertEqual(expected, result)
+
 
 
     # Part 4
