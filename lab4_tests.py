@@ -29,6 +29,17 @@ class TestCases(unittest.TestCase):
 
 
     # Part 2
+    def test_x_coordinates_1(self):
+        input = [data.Point(1, 1), data.Point(2, 3), data.Point(5, 8)]
+        result = lab4.x_coordinates(input)
+        expected = [1, 2, 5]
+        self.assertEqual(expected, result)
+
+    def test_x_coordinates_2(self):
+        input = [data.Point(2.2, 1.0), data.Point(5.6, 6.7), data.Point(2.17, 3.14)]
+        result = lab4.x_coordinates(input)
+        expected = [2.2, 5.6, 2.17]
+        self.assertEqual(expected, result)
 
 
     # Part 3

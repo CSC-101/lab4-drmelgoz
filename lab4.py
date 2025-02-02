@@ -10,9 +10,15 @@ def first_element(groups:list[list[int]]) -> list[int]:
 
 
 # Part 2
+def x_coordinates(points:list[data.Point]) -> list[float]:
+    result = [point.x for point in points]
+    return result
 
 
 # Part 3
+def are_in_positive_quadrant(points:list[data.Point]) -> list[data.Point]:
+    result = [point for point in points if (point.x > 0) and (point.y > 0)]
+    return result
 
 
 # Part 4
