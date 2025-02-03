@@ -1,4 +1,5 @@
 import data
+import math
 
 # Write your functions for each part in the space below.
 
@@ -22,6 +23,15 @@ def are_in_positive_quadrant(points:list[data.Point]) -> list[data.Point]:
 
 
 # Part 4
+def distance(point_a:data.Point, point_b:data.Point) -> float:
+    x1 = point_a.x
+    x2 = point_b.x
+    y1 = point_a.x
+    y2 = point_b.y
+    dx = x2 - x1
+    dy = y2 - y1
+    result = math.sqrt((dx ** 2) + (dy ** 2))
+    return result
 
 
 # Part 5

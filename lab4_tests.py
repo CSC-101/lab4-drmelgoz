@@ -58,6 +58,10 @@ class TestCases(unittest.TestCase):
 
 
     # Part 4
+    def test_distance_1(self):
+        result = lab4.distance(data.Point(0,0), data.Point(3, 4))
+        expected = 5.0
+        self.assertEqual(expected, result)
 
 
     # Part 5
