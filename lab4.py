@@ -44,10 +44,9 @@ def manhattan_distance(point_a:data.Point, point_b:data.Point) -> float:
     result = abs(dx) + abs(dy)
     return result
 
-
-
-
-
 # Part 6
+def distance_all(points:list[data.Point]) -> list[float]:
+    distances = [manhattan_distance(point, data.Point(0,0)) for point in points]
+    return distances
 
 
