@@ -63,9 +63,22 @@ class TestCases(unittest.TestCase):
         expected = 5.0
         self.assertEqual(expected, result)
 
+    def test_distance_2(self):
+        result = lab4.distance(data.Point(0,8), data.Point(6, 0))
+        expected = 10.0
+        self.assertEqual(expected, result)
+
 
     # Part 5
+    def test_manhattan_distance_1(self):
+        result = lab4.manhattan_distance(data.Point(3,3), data.Point(4, 9))
+        expected = 7.0
+        self.assertEqual(expected, result)
 
+    def test_manhattan_distance_2(self):
+        result = lab4.manhattan_distance(data.Point(0, 20), data.Point(10, 0))
+        expected = 30.0
+        self.assertEqual(result, expected)
 
     # Part 6
 

@@ -26,15 +26,26 @@ def are_in_positive_quadrant(points:list[data.Point]) -> list[data.Point]:
 def distance(point_a:data.Point, point_b:data.Point) -> float:
     x1 = point_a.x
     x2 = point_b.x
-    y1 = point_a.x
+    y1 = point_a.y
     y2 = point_b.y
     dx = x2 - x1
     dy = y2 - y1
     result = math.sqrt((dx ** 2) + (dy ** 2))
     return result
 
-
 # Part 5
+def manhattan_distance(point_a:data.Point, point_b:data.Point) -> float:
+    x1 = point_a.x
+    x2 = point_b.x
+    y1 = point_a.y
+    y2 = point_b.y
+    dx = x1 - x2
+    dy = y1 - y2
+    result = abs(dx) + abs(dy)
+    return result
+
+
+
 
 
 # Part 6
